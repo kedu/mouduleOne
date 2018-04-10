@@ -43,10 +43,14 @@
 +(NSData*)scaleImageReturnData:(UIImage *)image toKb:(NSInteger)kb{
 
     if (!image) {
-        return image;
+        
+        return nil;
+        
     }
     if (kb<1) {
-        return image;
+        
+        return nil;
+        
     }
     
     kb*=1024;
